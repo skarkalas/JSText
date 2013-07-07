@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>JSText</title>
+	
+	<link rel="stylesheet" type="text/css" href="./styles/jquery-ui-1.10.3.custom.min.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="./styles/mainview.css" media="screen">
+
+	<script type="text/javascript" charset="utf-8" src="./scripts/jquery-2.0.2.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="./scripts/jquery-ui-1.10.3.custom.min.js"></script>	
+	<script type="text/javascript" charset="utf-8" src="./scripts/jstext.js"></script> 	
+	
+	<script language="javascript" type="text/javascript">	
+		function execute()
+		{
+			eval($j('#input').val());
+		}
+	</script>
+</head>
+<body>
+	<h1>JSText</h1>
+	<textarea id="input" rows="10" cols="50"></textarea> 
+	<hr/>
+	<input id="execute" type="button" onclick="execute()" value="execute"/>
+	<hr/>
+	<textarea id="textoutput" rows="10" cols="50"></textarea> 
+</body>
+</html>
